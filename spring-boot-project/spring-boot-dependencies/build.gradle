@@ -9,7 +9,7 @@ description = "Spring Boot Dependencies"
 bom {
 	effectiveBomArtifact()
 	upgrade {
-		policy = "same-minor-version"
+		policy = "any"
 		gitHub {
 			issueLabels = ["type: dependency-upgrade"]
 		}
@@ -972,7 +972,7 @@ bom {
 			]
 		}
 	}
-	library("Micrometer", "1.11.0") {
+	library("Micrometer", "1.11.1-SNAPSHOT") {
 		group("io.micrometer") {
 			modules = [
 				"micrometer-registry-stackdriver" {
@@ -984,7 +984,7 @@ bom {
 			]
 		}
 	}
-	library("Micrometer Tracing", "1.1.1") {
+	library("Micrometer Tracing", "1.1.2-SNAPSHOT") {
 		group("io.micrometer") {
 			imports = [
 				"micrometer-tracing-bom"
@@ -1202,7 +1202,7 @@ bom {
 			]
 		}
 	}
-	library("Reactor Bom", "2022.0.7") {
+	library("Reactor Bom", "2022.0.8-SNAPSHOT") {
 		group("io.projectreactor") {
 			imports = [
 				"reactor-bom"
@@ -1382,7 +1382,7 @@ bom {
 			]
 		}
 	}
-	library("Spring AMQP", "3.0.4") {
+	library("Spring AMQP", "3.0.5-SNAPSHOT") {
 		group("org.springframework.amqp") {
 			modules = [
 				"spring-amqp",
@@ -1393,7 +1393,7 @@ bom {
 			]
 		}
 	}
-	library("Spring Authorization Server", "1.1.0") {
+	library("Spring Authorization Server", "1.1.1-SNAPSHOT") {
 		group("org.springframework.security") {
 			modules = [
 					"spring-security-oauth2-authorization-server"
@@ -1407,7 +1407,7 @@ bom {
 			]
 		}
 	}
-	library("Spring Data Bom", "2023.0.0") {
+	library("Spring Data Bom", "2023.0.1-SNAPSHOT") {
 		group("org.springframework.data") {
 			imports = [
 				"spring-data-bom"
@@ -1421,7 +1421,7 @@ bom {
 			]
 		}
 	}
-	library("Spring GraphQL", "1.2.0") {
+	library("Spring GraphQL", "1.2.1-SNAPSHOT") {
 		group("org.springframework.graphql") {
 			modules = [
 					"spring-graphql",
@@ -1468,21 +1468,21 @@ bom {
 			]
 		}
 	}
-	library("Spring Retry", "2.0.1") {
+	library("Spring Retry", "2.0.2-SNAPSHOT") {
 		group("org.springframework.retry") {
 			modules = [
 				"spring-retry"
 			]
 		}
 	}
-	library("Spring Security", "6.1.0") {
+	library("Spring Security", "6.1.1-SNAPSHOT") {
 		group("org.springframework.security") {
 			imports = [
 				"spring-security-bom"
 			]
 		}
 	}
-	library("Spring Session", "3.1.0") {
+	library("Spring Session", "3.1.1-SNAPSHOT") {
 		prohibit {
 			startsWith(["Apple-", "Bean-", "Corn-", "Dragonfruit-"])
 			because "Spring Session switched to numeric version numbers"
